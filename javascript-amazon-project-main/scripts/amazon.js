@@ -3,7 +3,7 @@ const products =[
     image: "images/products/athletic-cotton-socks-6-pairs.jpg",
     name:"Black and Gray Athletic Cotton Socks - 6 Pairs",
     rating:{
-        stars:"images/ratings/rating-45.png",
+        stars:4.5,
         count:87
     },
     priceCents: 1090
@@ -12,7 +12,7 @@ const products =[
     image: "images/products/intermediate-composite-basketball.jpg",
     name:"Intermediate Size Basketball",
     rating:{
-        stars:"images/ratings/rating-45.png",
+        stars:4.0,
         count:127
     },
     priceCents: 2095
@@ -20,7 +20,7 @@ const products =[
     image: "images/products/athletic-cotton-socks-6-pairs.jpg",
     name:"Black and Gray Athletic Cotton Socks - 6 Pairs",
     rating:{
-        stars:"images/ratings/rating-45.png",
+        stars:4.5,
         count:87
     },
     priceCents: 1090
@@ -41,7 +41,7 @@ products.forEach((product)=>{
    </div>
 
    <div class="product-rating-container">
-     <img class="product-rating-stars" src="images/ratings/rating-${product.rating.stars * 10}.png">
+     <img class="product-rating-stars" src="images/ratings/rating-${product.rating.stars * (10)}.png">
      <div class="product-rating-count link-primary">
       ${product.rating.count}
      </div>
